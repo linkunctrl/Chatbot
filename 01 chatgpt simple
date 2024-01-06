@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "Token"
 
 completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Write an essay about capybaras. "}])
 print(completion.choices[0].message.content)
